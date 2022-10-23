@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "footprint",
+	"description": "Online shopping carbon tracker",
+	"version": "1.0",
+	"author": "Group 20",
+
+	"background": {
+		"scripts": ["popup.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	}
+}
